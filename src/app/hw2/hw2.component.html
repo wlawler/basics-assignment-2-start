@@ -1,3 +1,13 @@
-<p>
-  hw2 works!
-</p>
+<label> hw2 form</label>
+
+
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="hw2form">
+<p>{{hw2form}}</p>
+<button
+class="hwbtn"
+[disabled]="allowedNewserved"
+(click)="onCreateServer()">hw2button</button>
+<p>{{serverCreationStatus}}</p>
