@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hw2.component.css']
 })
 export class Hw2Component implements OnInit {
-
-  constructor() { }
-
+userName= '';
+  constructor() { 
+setTimeout(() => {}, 5000);
+  this.userName = "true";
+}
   ngOnInit() {
   }
 

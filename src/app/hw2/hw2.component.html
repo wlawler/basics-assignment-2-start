@@ -4,10 +4,9 @@
 <input 
 type="text"
 class="form-control"
-[(ngModel)]="hw2form">
-<p>{{hw2form}}</p>
+[(ngModel)]="userName">
+<img id='obirad' style="display:none" src="https://media.giphy.com/media/xULW8ok4bhGAB3D8TS/giphy.gif">
 <button
 class="hwbtn"
-[disabled]="allowedNewserved"
-(click)="onCreateServer()">hw2button</button>
+onclick="document.getElementById('obirad').style.display='block'">hw2button</button>
 <p>{{serverCreationStatus}}</p>
