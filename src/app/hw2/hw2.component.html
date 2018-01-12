@@ -2,11 +2,15 @@
 
 
 <input 
-type="text"
-class="form-control"
-[(ngModel)]="userName">
-<img id='obirad' style="display:none" src="https://media.giphy.com/media/xULW8ok4bhGAB3D8TS/giphy.gif">
+    type="text"
+    class="form-control"
+    [(ngModel)]="userName">
+<img 
+    id='obirad' 
+    style="display:none" 
+    src="https://media.giphy.com/media/xULW8ok4bhGAB3D8TS/giphy.gif">
 <button
-class="hwbtn"
-onclick="document.getElementById('obirad').style.display='block'">hw2button</button>
+    [disabled]="!enableButton"
+    class="hwbtn"
+    onclick="document.getElementById('obirad').style.display='block'">hw2button</button>
 <p>{{serverCreationStatus}}</p>

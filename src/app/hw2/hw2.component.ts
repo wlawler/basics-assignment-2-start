@@ -5,13 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './hw2.component.html',
   styleUrls: ['./hw2.component.css']
 })
-export class Hw2Component implements OnInit {
-userName= '';
+export class Hw2Component {
+  userName= '';
+  enableButton = false;
+
   constructor() { 
-setTimeout(() => {}, 5000);
-  this.userName = "true";
-}
-  ngOnInit() {
+//    setTimeout(() => {
+//      //this.userName = "true";
+//      this.enableButton = true;
+//    }, 
+//    5000);
   }
 
+  ngDoCheck() { 
+//    console.log("Changes");
+    if (this.userName.length > 0)
+      this.enableButton = true;
+    else this.enableButton = false;
+  }
 }
